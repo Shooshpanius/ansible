@@ -1,7 +1,7 @@
----
-
 - hosts: all
-  gather_facts: false
-  tasks:
-    - ifconfig:
-    
+
+become: yes
+
+tasks:
+- ping:
+crash: data
