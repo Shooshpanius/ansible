@@ -1,4 +1,6 @@
-- name: "Get disk space"
+---
+
+- hosts: all
   raw: df -kh
   register: raw_diskspace
   
