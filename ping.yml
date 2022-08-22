@@ -1,6 +1,4 @@
----
-
-- hosts: all
-  become: yes
-  tasks:
-    - ping:
+- name: "Get disk space"
+  raw: df -kh
+  register: raw_diskspace
+  
