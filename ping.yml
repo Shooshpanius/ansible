@@ -1,8 +1,9 @@
 ---
 - hosts: all
+ 
   gather_facts: False
   become: True
-  
-tasks:
-- name: add user user1  
+  tasks:
+  - name: add user user1  
       raw: df -kh	
+	  
