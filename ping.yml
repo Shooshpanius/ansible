@@ -7,4 +7,3 @@
   - name: add user user1
     raw: df -kh
     register: sh_ip_int_br_result
-    msg: "My variable value is {{ sh_ip_int_br_result }}"
