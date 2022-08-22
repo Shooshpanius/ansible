@@ -4,8 +4,9 @@
   gather_facts: False
   become: True
   tasks:
-  - name: add user user1
+  - name: comm1
     raw: df -kh
     register: sh_ip_int_br_result
+  - name: comm2
     debug:
       msg: var is {{ sh_ip_int_br_result }}.
